@@ -11,4 +11,30 @@
   	<module>bank-manager-client</module>
   	<module>bank-manager-server</module>
   </modules>
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <ontimize.version>5.5.1</ontimize.version>
+    <hsqldb.version>1.8.0.10</hsqldb.version>
+</properties>
+<profiles>
+        <profile>
+            <id>default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>imatia-artifactory</id>
+                    <url>https://artifactory.imatia.com/public-artifactory/libs-release</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+    
 </project>
