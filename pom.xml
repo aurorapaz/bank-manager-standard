@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.omtimize</groupId>
+  <groupId>com.ontimize</groupId>
   <artifactId>bank-manager</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
@@ -11,11 +11,6 @@
   	<module>bank-manager-client</module>
   	<module>bank-manager-server</module>
   </modules>
-<properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <ontimize.version>5.5.1</ontimize.version>
-    <hsqldb.version>1.8.0.10</hsqldb.version>
-</properties>
 <profiles>
         <profile>
             <id>default</id>
@@ -37,4 +32,9 @@
         </profile>
     </profiles>
     
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <ontimize.version>5.5.1</ontimize.version>
+    <hsqldb.version>1.8.0.10</hsqldb.version>
+</properties>
 </project>
