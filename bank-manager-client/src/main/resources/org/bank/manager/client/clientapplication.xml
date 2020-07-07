@@ -16,4 +16,16 @@
         port="49015" 
         checkservermessagesperiod="4000" 
     />
+      <!-- Menu and toolbar configuration -->
+     <Menu archive="menu/menu.xml" />
+     <MenuListener class="org.bank.manager.client.menu.AppMenuListener" />
+     <Toolbar archive="toolbar/toolbar.xml"/>
+    <ToolbarListener class="com.ontimize.gui.DefaultToolBarListener" />
+      <FormManager id="Managerabout" 
+      form="modules/administration/formabout.xml" 
+      imanager="com.ontimize.gui.BasicInteractionManager" />
+    <FormManager id="Managerusers" 
+    form="modules/administration/formusers.xml" 
+    imanager="com.ontimize.gui.BasicInteractionManager" 
+    tree="modules/administration/treemanagerusers.xml"></FormManager>
 </MainApplication>
